@@ -259,6 +259,30 @@
         color: #000;
       }
 
+      /* Certifications Grid */
+      .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      .cert-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .cert-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+      .cert-card img:hover {
+        transform: scale(1.02);
+      }
+
       /* Contact */
       .contact-grid {
         display: grid;
@@ -288,6 +312,7 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -349,7 +374,7 @@
       <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
       <div class="timeline-item">
         <div class="timeline-date">2025 - 2026</div>
-        <h3>Junior Fullstack Web Developer</h3>
+        <h3>Junior Backend Web Developer</h3>
         <div class="card">
           <ul style="margin-left: 1.5rem; color: var(--text-muted)">
             <li>
@@ -374,11 +399,10 @@
         <i class="fas fa-folder-open"></i> Selected Projects
       </h2>
 
-      <!-- SchoolPulse Project -->
       <div class="timeline-item">
         <h3>SchoolPulse: Integrated Management System</h3>
         <p style="color: var(--accent); margin-bottom: 0.5rem">
-          Lead Full-Stack Developer
+          Lead Developer
         </p>
         <div class="card">
           <p style="color: var(--text-muted); margin-bottom: 1.5rem">
@@ -405,7 +429,6 @@
         </div>
       </div>
 
-      <!-- LIFT Project -->
       <div class="timeline-item">
         <div
           style="
@@ -446,7 +469,6 @@
         </div>
       </div>
 
-      <!-- SpendWise Project -->
       <div class="timeline-item">
         <h3>Spend Wise Financial Tracker</h3>
         <p style="color: var(--accent); margin-bottom: 0.5rem">
@@ -488,6 +510,50 @@
               />
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2 class="section-title">
+        <i class="fas fa-certificate"></i> Certifications & Training
+      </h2>
+      <div class="cert-grid">
+        <div class="card cert-card">
+          <img src="topcit.png" alt="TOPCIT Level 2 Certificate" />
+          <h3>TOPCIT Level 2</h3>
+          <p style="color: var(--accent); margin-bottom: 0.5rem">
+            Institute for Information & Communications Technology Promotion
+            (IITP)
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.9rem">
+            <i class="far fa-calendar-alt"></i> November 2024
+          </p>
+        </div>
+
+        <div class="card cert-card">
+          <img src="cisco.png" alt="Cisco Packet Tracer Certificate" />
+          <h3>Introduction to Packet Tracer</h3>
+          <p style="color: var(--accent); margin-bottom: 0.5rem">
+            Cisco Networking Academy
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.9rem">
+            <i class="far fa-calendar-alt"></i> February 2024
+          </p>
+        </div>
+
+        <div class="card cert-card">
+          <img
+            src="webinar.png"
+            alt="Programming Languages Webinar Certificate"
+          />
+          <h3>Programming Languages Java: C/C++ / C#</h3>
+          <p style="color: var(--accent); margin-bottom: 0.5rem">
+            CIB.O & GO Philippines
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.9rem">
+            <i class="far fa-calendar-alt"></i> October 2022
+          </p>
         </div>
       </div>
     </section>
